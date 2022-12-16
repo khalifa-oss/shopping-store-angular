@@ -1,0 +1,66 @@
+
+
+  <div class="row">
+
+    <div class="col-xl-12">
+      <h1>{{recipeDetail.name}}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xl-12" style=" ">
+      <img src="{{recipeDetail.imagePath}} " style="width:22rem;height: 22rem">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xl-5">
+      <hr>
+      <ul class="list-group" *ngFor="let ingred of recipeDetail.ingredients">
+        <li class="list-group-item">{{ingred.name}} - {{ingred.amount}}</li>
+
+      </ul>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xl-12">
+      <p> {{recipeDetail.description}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xl-12">
+      <div class="dropdown ">
+        <button class="btn btn-primary  dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+          Manage Recipe
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" style="cursor: pointer" (click)="addToSoppingList()">To Shopping List</a></li>
+<!--      it is the same    <li><a class="dropdown-item" style="cursor: pointer" [routerLink]="['/recipe',index,'edit']">Edit Recipe</a></li>-->
+          <li><a class="dropdown-item" style="cursor: pointer"(click)="onEditRecipe() " >Edit Recipe</a></li>
+          <li><a class="dropdown-item" style="cursor: pointer">Delete Recipe</a></li>
+        </ul>
+
+      </div>
+
+
+      <!--    <div class="btn-group ">-->
+      <!--      <button class="btn btn-primary dropdown-toggle " data-bs-toggle="dropdown">-->
+      <!--        <ul class="dropdown-menu">-->
+      <!--          <li class="dropdown-item">Edit Recipe</li>-->
+      <!--          <li class="dropdown-item">Delete Recipe</li>-->
+      <!--          <li class="dropdown-item">Edit Recipe</li>-->
+      <!--        </ul>-->
+      <!--        Manage Recipe-->
+      <!--      </button>-->
+      <!--    </div>-->
+
+    </div>
+  </div>
+
+<!--    </div>-->
+<!--</div>-->
+
+
+<!--<ngbd-dropdown-basic></ngbd-dropdown-basic>-->
+
+

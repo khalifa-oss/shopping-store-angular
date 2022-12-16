@@ -1,0 +1,13 @@
+
+<h4 *ngIf="isEdit else replace"> i will edit this actual recipe</h4>
+<!--<input class="input-group-text" [(ngModel)]="testVariable">-->
+<!--<button class="btn-primary" (click)=" createEvent()">clickkkkkkkkk</button>-->
+<!--<div class="text-dark">-->
+<!--  <p>the value is {{bindingTest}}</p>-->
+<!--</div>-->
+
+<ng-template #replace>
+ <h2>I will create a form to use it to add a new recipe</h2>
+
+</ng-template>
+

@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-md-5">
+    <app-recipe-list></app-recipe-list>
+  </div>
+<!--  <div class="col-md-7">-->
+<!--    <app-recipe-edit (isTrue)="display($event)" *ngFor="let value of listOfValue" [bindingTest]="value"></app-recipe-edit>-->
+<!--    <h3>{{catchValue}}</h3>-->
+<!--  </div>-->
+  <div class="col-md-7">
+  <router-outlet></router-outlet>
+  </div>
+  <!--  <div class="col-md-7">-->
+<!--      <app-recipe-detail *ngIf="recipeElement ;else infoText"[recipeTestDetail]="recipeElement"></app-recipe-detail>-->
+
+  <!--    <ng-template #infoText><p>please select a recipes</p></ng-template>-->
+  <!--  </div>-->
+</div>
+
+<!--(isTrueDisplay)="recipeElementDisplay($event)"-->

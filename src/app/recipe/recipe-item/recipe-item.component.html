@@ -1,0 +1,12 @@
+<div class="card" style="width: 10rem;">
+  <img src="{{recipeTest.imagePath}}" class="card-img-top" alt="recipe image">
+<!--  <a href=# (click)="onselect()">-->
+<!--  <a href=# [routerLink]="['recipeDetail',recipeTest.name]">-->
+  <a  [routerLink]="['/recipe',index]"  routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" >
+  <div class="card-body active">
+    <h5 class="card-title">{{recipeTest.name}}</h5>
+    <p class="card-text">{{recipeTest.description}}</p>
+  </div>
+  </a>
+</div>
+
